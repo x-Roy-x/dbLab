@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/lab_6_r?serverTimezone=UTC</property>
+        <!--?serverTimezone=UTC-->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">legoro05</property>
+        <!--<mapping class="com.kopach.PasswordOfShopperEntityity"/>-->
+        <!--<mapping resource="com/kopach/PasswordOfShopperEntity.hbm.xml"/>-->
+        <!--<mapping class="com.kopach.GoodEntity-->
+        <!--<mapping resource="com/kopach/GoodEntity.hbm.xml"/>-->
+        <!--<mapping resource="com/kopach/ShopperEntity.hbm.xml"/>-->
+        <!--<mapping class="com.kopach.ShopperEntity"/>-->
+        <!--<mapping class="com.kopach.StudentAndLecturerEntity"/>-->
+        <!--<mapping resource="com/kopach/StudentAndLecturerEntity.hbm.xml"/>-->
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <mapping class="roi.com.GoodEntity"/>
+        <mapping class="roi.com.PasswordOfShopperEntity"/>
+        <mapping class="roi.com.ShopperEntity"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
